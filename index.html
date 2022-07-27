@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
+  <style>
+    /* Write styles here */
+    * {
+      padding: 0;
+      margin: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: "Abel", sans-serif;
+      background-color: #F4F3F8;
+      max-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* FIXME: Nav Bar */
+    #navbarMonstera {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 25px;
+      margin-left: 40px;
+    }
+
+    #navbarMonstera #navFirst {
+      flex-grow: 1;
+    }
+
+    #navbarMonstera #navMid {
+      /* font-family: 'Allerta', sans-serif; */
+      display: flex;
+      flex-direction: row;
+      flex-grow: 2;
+      gap: 6em;
+      font-size: 1.2em;
+      justify-content: center;
+    }
+
+    #navbarMonstera #navMid div:first-child h4::after {
+      content: "";
+      display: block;
+      position: relative;
+      height: 2px;
+      width: 40px;
+      background-color: #000;
+      bottom: -4px;
+      right: 0px;
+    }
+
+    #navbarMonstera #navEnd {
+      gap: 2.5em;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    /* -------------------------------------------- */
+    /* Main Content */
+    #midWholePart11 {
+      margin-top: 25vh;
+      margin-left: 50px;
+      width: 35%;
+    }
+
+    #midWholePart11 li {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+
+    /* #midWholePart11 li::marker {
+      position: absolute;
+      top: 30px;
+      font-size: 2rem;
+      font-weight: bolder;
+    } */
+
+    #monstera {
+      font-family: 'Allerta', sans-serif;
+      font-weight: 900;
+      font-size: 6rem;
+      margin: 0;
+    }
+
+    #monstera::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 18px;
+      top: 338px;
+      height: 14px;
+      width: 14px;
+      border: 1px solid #000;
+      border-radius: 50%;
+    }
+
+    #midWholePart11 li:nth-child(1)::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 20px;
+      top: 340px;
+      height: 12px;
+      width: 12px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+
+    #midWholePart11 li:nth-child(2)::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 20px;
+      top: 380px;
+      height: 12px;
+      width: 12px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+
+    #midWholePart11 li:nth-child(3)::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 20px;
+      top: 420px;
+      height: 12px;
+      width: 12px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+
+    #midWholePart11 li:nth-child(4)::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 20px;
+      top: 460px;
+      height: 12px;
+      width: 12px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+
+    #midWholePart11 ul li:nth-child(3),
+    #midWholePart11 ul li:nth-child(4) {
+      width: 70%;
+    }
+
+    /* ----------------------------------- */
+    /* Button */
+    #midWholePart121,
+    #midWholePart121>div,
+    #midWholePart121 h1 {
+      display: inline-block;
+    }
+
+    #midWholePart121 {
+      /* font-family: 'Allerta', sans-serif; */
+      padding: 6px 30px;
+      margin-top: 50px;
+      margin-left: 60px;
+      font-weight: 200;
+      border-radius: 25px;
+      color: #fff;
+      background-color: #437654;
+    }
+
+    #midWholePart122 img {
+      width: 55%;
+      margin-left: 8px;
+    }
+
+    /* ----------------------------------- */
+    /* features */
+    #midWholePart13 {
+      width: 55%;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 100%;
+      margin-top: 120px;
+      margin-left: 30px;
+    }
+
+    .midWholePart13Parts {
+      display: flex;
+    }
+
+    .midWholePart13Parts>div {
+      margin-right: 6px;
+      min-height: 86px;
+    }
+
+    .midWholePart13Parts h4 {
+      font-family: 'Allerta', sans-serif;
+
+    }
+
+    .midWholePart13Parts p {
+      line-height: 110%;
+      font-size: .9rem;
+    }
+
+    /* -------------------------------------------------- */
+    /* image right */
+    #imgMain {
+      position: absolute;
+      right: 0;
+      top: 120px;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbarMonstera">
+    <div id="navFirst">
+      <img src="./photos/Logo.svg" />
+    </div>
+
+    <div id="navMid">
+      <div>
+        <h4>Home</h4>
+      </div>
+      <div>
+        <h4>Collection</h4>
+      </div>
+      <div>
+        <h4>Shop</h4>
+      </div>
+      <div>
+        <h4>About</h4>
+      </div>
+      <div>
+        <h4>Contact</h4>
+      </div>
+    </div>
+
+    <div id="navEnd">
+      <div>
+        <img src="./photos/cart.svg" />
+      </div>
+      <div>
+        <img src="./photos/user.svg" />
+      </div>
+      <div>
+        <img src="./photos/search.svg" />
+      </div>
+    </div>
+  </nav>
+
+  <div id="midWhole">
+    <div id="midWholePart1">
+      <div id="midWholePart11">
+        <div>
+          <ul>
+            <li>
+              <h1 id="monstera">MONSTERA</h1>
+            </li>
+            <li></li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Debitis ab veniam adipisci corrupti unde, nostrum saepe.
+            </li>
+            <li>
+              Quibusdam perferendis, dolore est odit iste cum quas quidem
+              officiis laudantium hic maxime recusandae?
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="midWholePart12">
+        <div id="midWholePart121">
+          <div>
+            <h1>DISCOVER</h1>
+          </div>
+          <div id="midWholePart122">
+            <img src="./photos/greaterThan.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="midWholePart13">
+        <div class="midWholePart13Parts">
+          <div>
+            <img id="feeding" src="./photos/water plant.png" />
+          </div>
+          <div>
+            <h4>Feeding</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet consecteturadipisicing elit
+            </p>
+          </div>
+        </div>
+        <div class="midWholePart13Parts">
+          <div>
+            <img id="light" src="./photos/light.svg" alt="" />
+          </div>
+          <div>
+            <h4>Light</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+          </div>
+        </div>
+        <div class="midWholePart13Parts">
+          <div>
+            <img id="care" src="./photos/plough.svg" />
+          </div>
+          <div>
+            <h4>Care</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img id="imgMain" src="./photos/6_folwer_cut.png" />
+    </div>
+  </div>
+</body>
+
+</html>
