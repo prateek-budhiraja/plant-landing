@@ -8,6 +8,7 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/5a6e447df1.js" crossorigin="anonymous"></script>
   <style>
     /* Write styles here */
     * {
@@ -57,6 +58,9 @@
       right: 0px;
     }
 
+
+
+
     #navbarMonstera #navEnd {
       gap: 2.5em;
       flex-grow: 1;
@@ -71,6 +75,15 @@
       margin-top: 25vh;
       margin-left: 50px;
       width: 35%;
+    }
+
+    nav img {
+      width: 90px;
+    }
+
+    #navEnd i {
+      display: block;
+      font-size: 1.4rem;
     }
 
     #midWholePart11 li {
@@ -219,6 +232,85 @@
       top: 120px;
       z-index: -1;
     }
+
+    @media screen and (max-width: 1000px) {
+      body {
+        overflow: auto;
+        overflow-x: hidden;
+      }
+
+      #imgMain {
+        display: none;
+      }
+
+      #monstera {
+        font-size: 3rem;
+      }
+
+      #midWholePart11 {
+        margin-left: 50px;
+        width: 90%;
+        margin-top: 80px;
+      }
+
+      #midWholePart11 ul li:nth-child(3),
+      #midWholePart11 ul li:nth-child(4) {
+        width: 100%;
+      }
+
+      #monstera::before {
+        top: 180px;
+      }
+
+      #midWholePart11 li:nth-child(1)::before {
+        top: 182px;
+      }
+
+      #midWholePart11 li:nth-child(2)::before {
+        top: 220px;
+      }
+
+      #midWholePart11 li:nth-child(3)::before {
+        top: 260px;
+      }
+
+      #midWholePart11 li:nth-child(4)::before {
+        top: 300px;
+      }
+
+      #midWholePart121 {
+        padding: 6px 20px;
+      }
+
+      #midWholePart122 img {
+        width: 55%;
+        margin-left: 8px;
+      }
+
+      #navMid div,
+      #navEnd div {
+        display: none;
+      }
+
+      #midWholePart13 {
+        display: block;
+      }
+
+      .midWholePart13Parts>div {
+        width: 300px;
+      }
+
+      .midWholePart13Parts {
+        margin-bottom: 20px;
+
+      }
+
+      #midWholePart13 {
+        width: 60%;
+        margin-left: 50px;
+        margin-top: 60px;
+      }
+    }
   </style>
 </head>
 
@@ -256,7 +348,9 @@
       <div>
         <img src="./photos/search.svg" />
       </div>
+      <i class="fa-solid fa-bars"></i>
     </div>
+
   </nav>
 
   <div id="midWhole">
